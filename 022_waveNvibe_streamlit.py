@@ -33,7 +33,7 @@ def load_data(filepath):
 # 1. 데이터 로드
 # ==========================================
 # 실제 파일 경로에 맞게 수정해주세요
-FILE_PATH = r"C:\Users\한윤지\Desktop\BP\001_data\03_recipe_data\graphs.pkl"
+FILE_PATH = "Wave-Vibe_network_graph/graphs.pkl"
 
 try:
     data = load_data(FILE_PATH)
@@ -219,4 +219,5 @@ try:
     st.caption(f"💡 현재 표시된 노드: {len(added_nodes)}개 | 마우스를 올리면 연결된 재료만 강조됩니다.")
 
 except Exception as e:
+
     st.error(f"HTML 렌더링 중 오류 발생: {e}")
