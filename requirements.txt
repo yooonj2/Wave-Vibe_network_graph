@@ -1,5 +1,4 @@
 streamlit
-pickle
 pandas
 pyvis.network
 streamlit.components.v1
