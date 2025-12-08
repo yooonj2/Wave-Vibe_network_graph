@@ -1,4 +1,3 @@
 pandas
-pyvis.network
-streamlit.components.v1
-os
+pyvis
+streamlit
