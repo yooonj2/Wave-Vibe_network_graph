@@ -33,7 +33,11 @@ def load_data(filepath):
 # 1. 데이터 로드
 # ==========================================
 # 실제 파일 경로에 맞게 수정해주세요
-FILE_PATH = "Wave-Vibe_network_graph/graphs.pkl"
+# 현재 실행 중인 파일(app.py)의 폴더 경로를 구함
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 경로 결합 (운영체제에 맞게 알아서 합쳐줌)
+FILE_PATH = os.path.join(current_dir, "graphs.pkl")
 
 try:
     data = load_data(FILE_PATH)
@@ -221,3 +225,4 @@ try:
 except Exception as e:
 
     st.error(f"HTML 렌더링 중 오류 발생: {e}")
+
