@@ -56,7 +56,7 @@ selected_label = st.sidebar.selectbox("카테고리 선택", options=list(format
 selected_key = formatted_options[selected_label]
 
 st.sidebar.subheader("필터링 옵션")
-limit_edges = st.sidebar.slider("표시할 최대 연결(Edge) 수", 100, 2000, 200, step=100)
+limit_edges = st.sidebar.slider("표시할 최대 연결(Edge) 수", 100, 2000, 100, step=100)
 min_node_count = st.sidebar.number_input("노드 최소 등장 횟수 (Count)", value=0, step=10)
 
 # ==========================================
@@ -225,4 +225,5 @@ try:
 except Exception as e:
 
     st.error(f"HTML 렌더링 중 오류 발생: {e}")
+
 
